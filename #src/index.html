@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casino test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @@include('_header.html')
+    <aside>
+        <div class="widgets">
+            <a href="#" class="widget widget__lang"></a>
+            <a href="#" class="widget widget__chat"></a>
+        </div>
+    </aside>
+    <main>
+        <section class="welcome container">
+            <div class="signup">
+                <h2 class="signup__title">Sign up and start winning</h2>
+                <span class="signup__grey signup__netw">With your social network</span>
+                <div class="signup__social">
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="../img/icons/icons.svg#arroba"></use>
+                        </svg>
+                        </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="../img/icons/icons.svg#odn"></use>
+                        </svg>
+                        </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="../img/icons/icons.svg#facebook"></use>
+                        </svg>
+                        </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="../img/icons/icons.svg#vk"></use>
+                        </svg>
+                        </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="../img/icons/icons.svg#google"></use>
+                        </svg>
+                        </a>
+                </div>
+                <span class="signup__grey signup__or">or</span>
+                <form action="#">
+                    <input type="email" name="email" placeholder="E-mail *" class="signup_filed email" required>
+                    <div>
+                        <input type="password" name="password" placeholder="Password *" class="signup_filed password" required>
+                        <select name="currency" class="currency">
+                            <option value="" disabled selected>Currency *</option>
+                            <option value="rub">Rub</option>
+                            <option value="eur">Euro</option>
+                            <option value="usd">USD</option>
+                        </select>
+                    </div>
+                    <input type="text" name="promo" placeholder="Promo-code" class="signup_filed promo">
+                    <span class="signup__grey checkbox--wrap">
+                    <input type="checkbox" name="term" class="checkbox term">
+                        <span>I agree with
+                        <a href="#" class="term--link">
+                            Term and Confidence
+                        </a></span>
+                    </span>
+                    <span class="signup__grey checkbox--wrap old">
+                    <input type="checkbox" name="old" class="checkbox">
+                        <span>I confirm that I’m 18 years or older</span>
+                    </span>
+                    <input type="submit" value="Register" class="submit">
+                    <a href="#" class='have'>Have an account?</a>
+                </form>
+            </div>
+            <div class="slider">
+                <div class="slider__content">
+                    <div class="slider__btn">
+                        <button class="btn btn--left"></button>
+                        <button class="btn btn--right"></button>
+                    </div>
+                    <span class="slider__bonus">FIRST bonuses</span>
+                    <h2 class="slider__title">Welcome BonusPackage</h2>
+                    <p class="slider__text">200 bonus and 100 free spins</p>
+                    <a href="#" class="slider__deposit">Deposit</a>
+                </div>
+                <div class="slider__pagination">
+                    <span class="slider__pagination--item slider__pagination--active"></span>
+                    <span class="slider__pagination--item"></span>
+                    <span class="slider__pagination--item"></span>
+                    <span class="slider__pagination--item"></span>
+                </div>
+            </div>
+        </section>
+        <section class="choice">
+            <div class="container">
+                <div class="choice__categories">
+                    <div class="category">
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#1"></use>
+                            </svg>
+                            <span>New games</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#2"></use>
+                            </svg>
+                            <span>Popular</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#3"></use>
+                            </svg>
+                            <span>Slots</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#4"></use>
+                            </svg>
+                            <span>Casino Live</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#5"></use>
+                            </svg>
+                            <span>Table Games</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#6"></use>
+                            </svg>
+                            <span>Favorites</span>
+                        </a>
+                        <a href="#" class="category__item">
+                            <svg class="icon">
+                                <use xlink:href="../img/icons/icons.svg#7"></use>
+                            </svg>
+                            <span>Last played</span>
+                        </a>
+                        <button class="category__item category__all">All category</button>
+                    </div>
+                    <div class="search">
+                        <form action="#">
+                            <input type="search" name="search" class="search__field" placeholder="Search games or providers">
+                            <button type="submit" class="search__btn">
+                                <svg class="icon">
+                                    <use xlink:href="../img/icons/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="choice__filter">
+                    <button class="item filter--active">All Providers</button>
+                    <button class="item">NetEnt</button>
+                    <button class="item">Microgaming</button>
+                    <button class="item">Quickspin</button>
+                    <button class="item">PragmaticPlay</button>
+                    <button class="item">BoomingGames</button>
+                    <button class="item">MrSlotty</button>
+                    <button class="item">BoomingGames</button>
+                    <button class="item">BetRadar</button>
+                    <button class="item">PariPlay</button>
+                    <button class="item">BetConstruct</button>
+                    <button class="item">NetEnt</button>
+                </div>
+            </div>
+        </section>
+        <section class="newGames container">
+            <div class="newGames__titles--wrap">
+                <h2 class="newGames__title">New games</h2>
+                <a href="#">
+                    <span class="newGames__all">View all (46)</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="games">
+                <div class="games__rows">
+                    <a href="#" class="item item-up">
+                        <img src="../img/newGames/1.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/newGames/2.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/newGames/3.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/newGames/4.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/newGames/5.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/newGames/6.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/newGames/7.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/newGames/8.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                </div>
+                <a href="#" class="link__big--green link__big">
+                    <img src="../img/newGames/big.png" alt="" class="games__big big--green">
+                    <button class="play_now">Play now</button>
+                </a>
+            </div>
+        </section>
+        <section class="winning">
+            <div class="container">
+                <h2 class="winning__title">Winning now</h2>
+                <div class="items">
+                    <div class="item">
+                        <img src="../img/winning/1.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Ivan-khopin</span>
+                            <a href="#" class="item__games">100 Cats</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/2.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Daria</span>
+                            <a href="#" class="item__games">The Story of Alex</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/3.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Ivan-khonin</span>
+                            <a href="#" class="item__games">100 Cats</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/4.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Daria</span>
+                            <a href="#" class="item__games">The Story of Alex</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/5.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Ivan-khopin</span>
+                            <a href="#" class="item__games">100 Cats</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/6.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Daria</span>
+                            <a href="#" class="item__games">The Story of Alex</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/winning/7.png" alt="" class="item__img">
+                        <div class="item__body">
+                            <span class="item__name">Ivan-khopin</span>
+                            <a href="#" class="item__games">100 Cats</a>
+                            <span class="item__amount">1020 Р</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular container">
+            <div class="popular__titles--wrap">
+                <h2 class="popular__title">Popular</h2>
+                <a href="#">
+                    <span class="popular__all">View all (46)</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="games">
+                <a href="#" class="link__big--turquoise link__big">
+                    <img src="../img/popular/big.png" alt="" class="games__big big--turquoise">
+                    <button class="play_now">Play now</button>
+                </a>
+                <div class="games__rows">
+                    <a href="#" class="item item-up">
+                        <img src="../img/popular/1.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/popular/2.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/popular/3.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/popular/4.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/popular/5.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/popular/6.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/popular/7.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/popular/8.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="recommends container">
+            <div class="recommends__titles--wrap">
+                <h2 class="recommends__title">Recommends games</h2>
+                <a href="#">
+                    <span class="recommends__all">View all (46)</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="games">
+                <div class="games__rows">
+                    <a href="#" class="item item-up item__link1--flag">
+                        <img src="../img/recommends/1.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up item__link2--flag">
+                        <img src="../img/recommends/3.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/recommends/2.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item-up">
+                        <img src="../img/recommends/4.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item__link3--flag">
+                        <img src="../img/recommends/5.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/recommends/6.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item item__link4--flag">
+                        <img src="../img/recommends/7.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="../img/recommends/8.png" alt="">
+                        <button class="play_now">Play now</button>
+                    </a>
+                </div>
+                <a href="#" class="link__big--purple link__big">
+                    <img src="../img/recommends/big.png" alt="" class="games__big big--purple">
+                    <button class="play_now">Play now</button>
+                </a>
+            </div>
+        </section>
+        <section class="stats container">
+            <div class="month">
+                <h3 class="month__title">Game of month</h3>
+                <div class="month__body">
+                    <span class="percent">
+                        87% of players played the <a href="#" class="jungle">JUNGLE BOOKS</a> all month
+                    </span>
+                    <a href="#" class="start">Start playing</a>
+                </div>
+            </div>
+            <div class="statistic">
+                <div class="item">
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#cards"></use>
+                    </svg>
+                    <div class="body">
+                        <span class="body__number">+100</span>
+                        <span class="body__text">Players every day</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#flag2"></use>
+                    </svg>
+                    <div class="body">
+                        <span class="body__number">30</span>
+                        <span class="body__text">Providers</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <svg class="icon">
+                        <use xlink:href="../img/icons/icons.svg#dice"></use>
+                    </svg>
+                    <div class="body">
+                        <span class="body__number">+500</span>
+                        <span class="body__text">of over games</span>
+                    </div>
+                </div>
+            </div>
+            <div class="biggest">
+                <h3 class="biggest__title">Biggest wins</h3>
+                <table class="table">
+                        <tr class="table__header">
+                            <th>Player</th>
+                            <th>Game</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr>
+                            <th>SlotPirot12</th>
+                            <th><a href="#" class="table__games">Gonzo Quest</a></th>
+                            <th>5 000 €</th>
+                        </tr>
+                        <tr>
+                            <th>LussyLu</th>
+                            <th><a href="#" class="table__games">Spinata Grande</a></th>
+                            <th>3 200 €</th>
+                        </tr>
+                        <tr>
+                            <th>SunnyLunny</th>
+                            <th><a href="#" class="table__games">Jack Hammer</a></th>
+                            <th>2 300 €</th>
+                        </tr>
+                        <tr>
+                            <th>SlotPirot12</th>
+                            <th><a href="#" class="table__games">Gonzo Quest</a></th>
+                            <th>1 000 €</th>
+                        </tr>
+                        <tr>
+                            <th>LussyLu</th>
+                            <th><a href="#" class="table__games">Spinata Grande</a></th>
+                            <th> 750 €</th>
+                        </tr>
+                        <tr>
+                            <th>LussyLu</th>
+                            <th><a href="#" class="table__games">Spinata Grande</a></th>
+                            <th> 750 €</th>
+                        </tr>
+                        <tr>
+                            <th>LussyLu</th>
+                            <th><a href="#" class="table__games">Spinata Grande</a></th>
+                            <th> 750 €</th>
+                        </tr>
+                        <tr>
+                            <th>LussyLu</th>
+                            <th><a href="#" class="table__games">Spinata Grande</a></th>
+                            <th> 750 €</th>
+                        </tr>
+                </table>
+            </div>
+        </section>
+        <section class="payments container">
+            <a href="#">
+                <svg class="payments__neteller payments__item"width="163">
+                    <use xlink:href="../img/icons/icons.svg#neteller"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__skrill payments__item" width="150">
+                    <use xlink:href="../img/icons/icons.svg#skrill"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__cubits payments__item" width="155">
+                    <use xlink:href="../img/icons/icons.svg#cubits"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__mastercard payments__item" width="52">
+                    <use xlink:href="../img/icons/icons.svg#mastercard"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__vise payments__item" width="102">
+                    <use xlink:href="../img/icons/icons.svg#visa"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__qiwi payments__item" width="90">
+                    <use xlink:href="../img/icons/icons.svg#qiwi"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="payments__yandex payments__item" width="133">
+                    <use xlink:href="../img/icons/icons.svg#yandex"></use>
+                </svg>
+            </a>
+        </section>
+    </main>
+    @@include('_footer.html')
+    <script src="js/script.min.js"></script>
+</body>
+</html>

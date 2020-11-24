@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@mixin robReg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+@mixin robMed {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+@mixin robBold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}

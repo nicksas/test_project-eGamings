@@ -1,0 +1,61 @@
+.header
+  background-color: #121423
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 16px 0
+    .nav
+      display: flex
+      align-items: center
+      &__search
+        margin-right: 43px
+        .icon
+          width: 20px
+          height: 21px
+      &__item
+        color: #ffffff
+        +robBold
+        font-size: 18px
+        &:not(:last-child)
+          margin-right: 25px
+      &__item:hover
+        color: #b9ffba
+    .logo
+      display: flex
+      align-items: center
+      color: #ffffff
+      font-size: 20px
+      text-transform: uppercase
+      +robBold
+      .icon
+        width: 40px
+        height: 40px
+        margin-right: 3px
+    .buttons
+      .header__button
+        font-size: 16px
+        padding: 10px 30px
+        border-radius: 100px
+        +robBold
+      .header_button-dep
+        background-color: #87E389
+        color: #000000
+        margin-right: 15px
+        box-shadow: none
+        transition: box-shadow .3s ease
+      .header_button-dep:hover
+        box-shadow: 0 0 4px 1px #969696
+      .header_button-login
+        position: relative
+        color: #ffffff
+        padding: 10px 40px
+        border: 1px solid #ffffff
+        box-shadow: none
+        transition: box-shadow .3s ease
+        .icon
+          width: 11px
+          height: 12px
+      .header_button-login:hover
+        box-shadow: 0 0 4px 1px #969696
+

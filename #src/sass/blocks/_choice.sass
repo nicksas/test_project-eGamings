@@ -1,0 +1,86 @@
+.choice
+  background-color: #121423
+  margin-bottom: 46px
+  &__categories
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 14px
+    padding-bottom: 19px
+    .category
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__item
+        display: flex
+        align-items: center
+        color: #ffffff
+        +robMed
+        font-size: 14px
+        transition: color .3s ease
+        &:not(:last-child)
+          margin-right: 45px
+        svg
+          width: 21px
+          height: 21px
+          margin-right: 10px
+      &__item:hover
+        color: #32448c
+      &__all
+        position: relative
+        background-color: transparent
+        border: none
+      &__all:after
+        content: ''
+        width: 16px
+        height: 6px
+        position: absolute
+        background-image: url("../img/choice/8.svg")
+        background-repeat: no-repeat
+        background-size: inherit
+        right: -20px
+    .search
+      position: relative
+      max-width: 390px
+      form
+        padding-right: 33px
+        width: 360px
+      &__field
+        background: transparent
+        border: 1px solid #898989
+        padding: 6px 25px 3px 13px
+        color: #ffffff
+        border-radius: 17px
+        display: block
+        width: 100%
+      &__field::placeholder
+        color: #8C91BA
+      &__btn
+        background: transparent
+        border: none
+        position: absolute
+        top: 4px
+        right: -2px
+        svg
+          width: 18px
+          height: 19px
+  &__filter
+    padding-top: 14px
+    padding-bottom: 23px
+    display: flex
+    justify-content: space-around
+    .item
+      background: transparent
+      border: 1px solid #282F4B
+      border-radius: 50px
+      color: #8187AD
+      padding: 5px 14px
+      transition: all .3s ease
+    .filter--active
+      border: 1px solid #D73649
+      color: #ffffff
+    .item:hover
+      border: 1px solid #36191e
+      color: #969cbb
+
+

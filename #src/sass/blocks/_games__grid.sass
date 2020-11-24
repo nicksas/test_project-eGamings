@@ -1,0 +1,55 @@
+.games
+  display: flex
+  &__rows
+    display: flex
+    flex-wrap: wrap
+    .item
+      position: relative
+      margin-right: 8px
+      img
+        position: relative
+        max-width: 249px
+        display: block
+        border-radius: 18px
+        transition: opacity .3s ease
+      &:hover,
+      &:focus
+        img
+          opacity: .5
+        .play_now
+          display: block
+      &-up
+        margin-bottom: 8px
+    .item:nth-child(4n)
+      margin-right: 0
+    .item:nth-child(8n)
+      margin-right: 0
+  &__big
+    max-width: 492px
+
+.link__big
+  &:hover,
+  &:focus
+    img
+      opacity: .5
+    .play_now
+      display: block
+.play_now
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 100px
+  height: 30px
+  background-color: #87E389
+  transform: translate(-50%, -50%)
+  display: none
+  z-index: 1
+  border-radius: 50px
+  border: 0
+  box-shadow: none
+  transition: box-shadow .3s ease
+  color: #000000
+  +robMed
+.play_now:hover
+  box-shadow: 0 0 4px 1px #969696
+

@@ -1,0 +1,91 @@
+.footer
+  background-color: #121423
+  padding-top: 33px
+  box-shadow: inset 0px 4px 34px rgba(0, 0, 0, 0.45)
+  .partner
+    margin-bottom: 40px
+    &__row--up
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 30px
+    &__row--down
+      display: flex
+      justify-content: space-between
+      align-items: center
+  hr
+    border: none
+    height: 1px
+    background-color: #172146
+    margin-bottom: 44px
+  .nav
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-bottom: 35px
+  &__column--left
+    display: flex
+    flex-direction: column
+    .icon--plus
+      width: 54px
+      height: 54px
+  &__logo
+    display: flex
+    align-items: center
+    margin-bottom: 48px
+    min-width: 245px
+    .icon
+      width: 51px
+      height: 51px
+      margin-right: 7px
+    span
+      font-size: 30px
+      color: #ffffff
+      +robMed
+  &__column--middle
+    display: flex
+    .item
+      display: flex
+      flex-direction: column
+      &__title
+        display: block
+        color: #ffffff
+        font-size: 24px
+        margin-bottom: 23px
+        +robMed
+      &__link
+        font-size: 16px
+        color: #32448C
+        transition: color .3s ease
+        +robMed
+      &__link:hover
+        color: #69729a
+      &__link:not(:last-child)
+        margin-bottom: 10px
+    .item:not(:last-child)
+      margin-right: 60px
+  &__column--right
+    max-width: 387px
+    color: #ffffff
+    .title
+      display: inline-block
+      font-size: 18px
+      margin-bottom: 35px
+      +robBold
+    .body
+      font-size: 14px
+      line-height: 105%
+      +robReg
+  .copyright
+    margin: 0 auto
+    max-width: 895px
+    padding-bottom: 50px
+    color: #ffffff
+    font-size: 10px
+    line-height: 150%
+    text-align: center
+    +robMed
+    .developer__link
+      color: #00FFD1
+    .developer__link:hover
+      text-decoration: underline
